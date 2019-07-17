@@ -93,7 +93,7 @@ namespace MusicSelect
                     }
                     // シーン遷移
                     string arg = this.library.group[this.select_folder_index].musics.Find(p => p.Name == btn_index.name).Path;
-                    //NavigationService.NavigateAsync("GameMain_CM", arg, LoadSceneMode.Single).Subscribe();
+                    //NavigationService.NavigateAsync("GameMain", arg, LoadSceneMode.Single).Subscribe();
 
                     
 
