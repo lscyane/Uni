@@ -6,7 +6,13 @@ namespace CMS.Note
 {
     abstract class NoteBase : MonoBehaviour
     {
-        protected const string TEXTURES_PATH = "Textures/CMS/NoteSkins/";
+        protected const string TEXTURES_PATH = "Textures/NoteSkins/";
+
+        protected string NoteTexturePath
+        {
+            get { return TEXTURES_PATH + CONST.DefApp.NOTE_SKIN_SELECT + "/"; }
+        }
+
         /// <summary> オブジェクト取得用のタグ名(UnityEditorで設定) </summary>
         public const string TAG_NAME = "NoteObject";
 

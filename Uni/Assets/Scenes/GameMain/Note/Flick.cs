@@ -24,7 +24,7 @@ namespace CMS.Note
         void Start()
         {
             // リソースをロードしてインスタンス化(仮)
-            Texture2D texture = Resources.Load<Texture2D>(TEXTURES_PATH + "default/note_flick");
+            Texture2D texture = Resources.Load<Texture2D>(base.NoteTexturePath + "note_flick");
             this.gameObject.GetComponent<Renderer>().material.mainTexture = texture;
         }
 

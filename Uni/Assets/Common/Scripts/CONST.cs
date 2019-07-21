@@ -52,7 +52,7 @@ public class CONST
         /// <summary> BGMノートの音量 </summary>
         public const float NOTE_BGM_VOLUME = 0.5f;
 
-
+        public const string NOTE_SKIN_SELECT = "default";
     }
 
 

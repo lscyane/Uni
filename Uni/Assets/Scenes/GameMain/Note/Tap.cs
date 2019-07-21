@@ -25,12 +25,12 @@ namespace CMS.Note
             // リソースをロードしてインスタンス化(仮)
             if (this.note_obj.NoteType == UBMS_serializer.ENoteType.Tap)
             {
-                Texture2D texture = Resources.Load<Texture2D>(TEXTURES_PATH + "default/note_tap");
+                Texture2D texture = Resources.Load<Texture2D>(base.NoteTexturePath + "note_tap");
                 this.gameObject.GetComponent<Renderer>().material.mainTexture = texture;
             }
             else
             {
-                Texture2D texture = Resources.Load<Texture2D>(TEXTURES_PATH + "default/note_extap");
+                Texture2D texture = Resources.Load<Texture2D>(base.NoteTexturePath + "note_extap");
                 this.gameObject.GetComponent<Renderer>().material.mainTexture = texture;
             }
 
